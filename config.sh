@@ -1,0 +1,6 @@
+# export SPARK_HOME="${HOME}/Spark"
+# export PYSPARK_DRIVER_PYTHON="jupyter"
+# export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+# export PYSPARK_PYTHON="python"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"
+# export PATH="${SPARK_HOME}/bin:${PATH}"
