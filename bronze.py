@@ -24,7 +24,7 @@ LOG_PATH = 'log'
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 os.makedirs(LOG_PATH,exist_ok=True)
-log_file_path = os.path.join(LOG_PATH,'application.log')
+log_file_path = os.path.join(LOG_PATH,'bronze.log')
 fh = logging.FileHandler(log_file_path)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fh.setFormatter(formatter)
