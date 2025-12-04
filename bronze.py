@@ -229,8 +229,12 @@ def clean_orders(df:DataFrame) -> DataFrame:
     logger.warning(f"Record count of null values in primary key before cleaning: {counts.null_count}")
 
     # Drop nulls and duplicate IDs
-    df_bronze = df.dropna(subset=['order_id']).dropDuplicates(subset=['order_id'])
+    dfa = df.dropna(subset=['order_id']).dropDuplicates(subset=['order_id'])
     logger.debug("Dropped nulls and duplicate order ids")
+
+    # Cleaned text and removed underscore in order_status
+    df_bronze = dfa.withColumn("order_status", sf.initcap(sf.regexp_replace("order_status","_"," ")))
+    logger.debug("Removed underscore in order_status and updated case to title case")
 
     # Log total number of records after bronze cleaning
     logger.info(f"Record count of orders table after bronze cleaning: {df_bronze.count()}")
