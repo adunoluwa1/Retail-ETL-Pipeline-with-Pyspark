@@ -1,0 +1,6 @@
+.venv
+.env
+Source
+.DS_Store
+config.py
+config.sh
