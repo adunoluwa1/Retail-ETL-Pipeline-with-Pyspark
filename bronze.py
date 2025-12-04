@@ -1,26 +1,30 @@
+"""
+Docstring for bronze
+"""
 import os
 import json
 import glob
 import logging
+from typing import Optional
 from dotenv import load_dotenv
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.types import *
 import pyspark.sql.functions as sf
 import pyspark.errors as pe
-from typing import Optional
 
-# Set environment and other variables
+# Set environment variables and other constants
 load_dotenv()
-schema_path = 'raw/schemas.json'
-bronze_path = 'data/bronze'
-raw_path = 'raw'
-log_path = 'log'
+SCHEMA_JSON_PATH = 'raw/schemas.json'
+BRONZE_PATH = 'data/bronze'
+RAW_PATH = 'raw'
+LOG_PATH = 'log'
 
 # Set Logger
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
-os.makedirs(log_path,exist_ok=True)
-log_file_path = os.path.join(log_path,'application.log')
+os.makedirs(LOG_PATH,exist_ok=True)
+log_file_path = os.path.join(LOG_PATH,'application.log')
 fh = logging.FileHandler(log_file_path)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 fh.setFormatter(formatter)
@@ -43,7 +47,7 @@ def get_schema_json(path:str='**/schemas.json') -> dict:
         # if multiple schema paths are found
         if len(schema_path) > 1:
             raise FileNotFoundError(f"Multiple schema files found in {path}")
-        schema_path = schema_path[0] 
+        schema_path = schema_path[0]
         # read schema from path and parse as dict
         with open(schema_path,'r') as file:
             schema_dict = json.load(file)
@@ -75,27 +79,21 @@ def get_dataframe_schema(schema_dict:dict[str,list],table:str,sorting_key:str='c
     except Exception as e:
         logger.exception(f"Error parsing col: {col_name},{data_type_name}", exc_info=True)
         raise e
-    
+
 # load data into dataframe from files
 def load_data(src_path:str, table:str,schema:StructType,pattern:str="part-*"):
     """
     """
-    table_dir_path = os.path.join(src_path,table) 
-    search_path = os.path.join(table_dir_path,pattern) 
+    table_dir_path = os.path.join(src_path,table)
+    search_path = os.path.join(table_dir_path,pattern)
     path_list = glob.glob(pathname=search_path,recursive=True)
     try:
-        # raise FileNotFoundError no file exists 
+        # raise FileNotFoundError no file exists
         if len(path_list) == 0:
             raise FileNotFoundError(f"File not found in {search_path}")
-        
+
         # read files using Spark
         df = spark.read.csv(table_dir_path,schema=schema,sep=',')
-
-        # calculate number of records
-        # df.createOrReplaceTempView(f"temp_{table}")
-        # df_count = spark.sql(f"SELECT COUNT(*) AS num_records FROM temp_{table}")
-        # count = df_count.first()
-        # logger.info(f"Successfuly parsed {count.num_records} records from directory: {table_dir_path}")
         logger.info(f"Successfuly loaded {table} from directory: {table_dir_path}")
         return df
     except FileNotFoundError as e:
@@ -111,7 +109,7 @@ def load_data(src_path:str, table:str,schema:StructType,pattern:str="part-*"):
 # Data cleaning functions
 def clean_customers(df:DataFrame) -> DataFrame:
     logger.info("========== Cleaning customers data ==========")
-    
+
     # Calculate null counts and metrics via sql query
     df.createOrReplaceTempView('temp_customers')
     counts_df = spark.sql("""
@@ -123,7 +121,7 @@ def clean_customers(df:DataFrame) -> DataFrame:
     # Log counts of unique ids
     logger.info(f"Record count of customers before cleaning: {counts.id_count}")
     logger.warning(f"Record count of null values in primary key before cleaning: {counts.null_count}")
-    
+
     # Drop nulls and duplicate IDs
     df = df.dropna(subset=['customer_id']).dropDuplicates(subset=['customer_id'])
     logger.debug("Dropped nulls and duplicate customer ids")
@@ -138,7 +136,7 @@ def clean_customers(df:DataFrame) -> DataFrame:
 
 def clean_departments(df:DataFrame) -> DataFrame:
     logger.info("========== Cleaning departments data ==========")
-        
+
     # Calculate null counts and metrics via sql query
     df.createOrReplaceTempView('temp_departments')
     counts_df = spark.sql("""
@@ -224,8 +222,8 @@ def clean_orders(df:DataFrame) -> DataFrame:
     SELECT COUNT(1) AS id_count,
         SUM(CASE WHEN order_id IS NULL THEN 1 ELSE 0 END) AS null_count
     FROM temp_orders """)
-    counts = counts_df.first()   
-    
+    counts = counts_df.first()
+
     # Log counts of unique ids
     logger.info(f"Record count of orders before cleaning: {counts.id_count}")
     logger.warning(f"Record count of null values in primary key before cleaning: {counts.null_count}")
@@ -247,12 +245,12 @@ def clean_products(df:DataFrame) -> DataFrame:
     SELECT COUNT(1) AS id_count,
         SUM(CASE WHEN product_id IS NULL THEN 1 ELSE 0 END) AS null_count
     FROM temp_products """)
-    counts = counts_df.first() 
-    
+    counts = counts_df.first()
+
     # Log counts of unique ids
     logger.info(f"Record count of products before cleaning: {counts.id_count}")
     logger.warning(f"Record count of null values in primary key before cleaning: {counts.null_count}")
-    
+
     # removing unnecessary columns
     columns = [col for col in df.columns if col not in ['product_description','product_image']]
     logger.debug("Dropped unnecessary columns - product_description and product_image")
@@ -273,7 +271,7 @@ def save_as_bronze(df:DataFrame, name:str):
     logger.info(f"============ Saving {name} as Parquet ==========")
     try:
         # create save path
-        save_path = os.path.join(bronze_path,f"{name}_clean.parquet")
+        save_path = os.path.join(BRONZE_PATH,f"{name}_clean.parquet")
         logger.debug(f"Created save path for {name}: '{save_path}'")
         # write to parquet
         df.write.parquet(path=save_path,mode='overwrite')
@@ -285,7 +283,7 @@ def save_as_bronze(df:DataFrame, name:str):
 def _process_bronze_table(name:str):
     logger.info(f"========== Started processing {name} ==========")
     try:
-        df = load_data(raw_path, name, get_dataframe_schema(schema_dict,name))
+        df = load_data(RAW_PATH, name, get_dataframe_schema(schema_dict,name))
         table_fn_map = {
             'customers': clean_customers,
             'departments': clean_departments,
@@ -304,8 +302,7 @@ def _process_bronze_table(name:str):
 
 
 # Use a thread pool to parallelize Spark jobs from the same SparkSession
-from concurrent.futures import ThreadPoolExecutor, as_completed
-schema_dict = get_schema_json(path=schema_path)
+schema_dict = get_schema_json(path=SCHEMA_JSON_PATH)
 
 def main():
     tables = schema_dict.keys()
@@ -318,7 +315,7 @@ def main():
                 fut.result()
             except Exception as e:
                 logger.critical(f"Table {tbl} failed: {e}")
-                raise            
+                raise
 
 if __name__ == "__main__":
     main()
