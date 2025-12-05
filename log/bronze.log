@@ -1,0 +1,111 @@
+2025-12-04 18:16:27,436 - __main__ - INFO - Initialized SparkSession Retail_ETL_Pipeline
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed schema 'raw/schemas.json' as dict
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Started processing departments ==========
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Parsing departments ========== 
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Started processing categories ==========
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 1: department_id of 2
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Started processing orders ==========
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Parsing categories ========== 
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Started processing products ==========
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 2: department_name of 2
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Parsing orders ========== 
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 1: category_id of 3
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Parsing products ========== 
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 1: order_id of 4
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 2: category_department_id of 3
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 1: product_id of 6
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 2: order_date of 4
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfuly loaded departments from directory: raw/departments
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 3: category_name of 3
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 2: product_cateogry_id of 6
+2025-12-04 18:16:27,437 - __main__ - INFO - Successfully parsed column 3: order_customer_id of 4
+2025-12-04 18:16:27,437 - __main__ - INFO - ========== Cleaning departments data ==========
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfully parsed column 3: product_name of 6
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfully parsed column 4: order_status of 4
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfully parsed column 4: product_description of 6
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfuly loaded categories from directory: raw/categories
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfuly loaded orders from directory: raw/orders
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfully parsed column 5: product_price of 6
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfully parsed column 6: product_image of 6
+2025-12-04 18:16:27,438 - __main__ - INFO - ========== Cleaning orders data ==========
+2025-12-04 18:16:27,438 - __main__ - INFO - ========== Cleaning categories data ==========
+2025-12-04 18:16:27,438 - __main__ - INFO - Successfuly loaded products from directory: raw/products
+2025-12-04 18:16:27,438 - __main__ - INFO - ========== Cleaning products data ==========
+2025-12-04 18:16:29,795 - __main__ - INFO - Record count of orders before cleaning: 68883
+2025-12-04 18:16:29,796 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:29,796 - __main__ - DEBUG - Dropped nulls and duplicate order ids
+2025-12-04 18:16:29,797 - __main__ - DEBUG - Removed underscore in order_status and updated case to title case
+2025-12-04 18:16:29,798 - __main__ - INFO - Record count of categories before cleaning: 58
+2025-12-04 18:16:29,798 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:29,798 - __main__ - DEBUG - Dropped nulls and duplicate category_ids
+2025-12-04 18:16:29,800 - __main__ - INFO - Record count of products before cleaning: 1345
+2025-12-04 18:16:29,800 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:29,802 - __main__ - INFO - Record count of departments before cleaning: 6
+2025-12-04 18:16:29,802 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:29,803 - __main__ - DEBUG - Dropped nulls and duplicate department ids
+2025-12-04 18:16:29,825 - __main__ - DEBUG - Dropped unnecessary columns - product_description and product_image
+2025-12-04 18:16:29,825 - __main__ - DEBUG - Dropped nulls and duplicate product ids
+2025-12-04 18:16:29,837 - __main__ - DEBUG - Trimmed and capitalized the category name for uniformity
+2025-12-04 18:16:29,837 - __main__ - DEBUG - Trimmed and capitalized the department name for uniformity
+2025-12-04 18:16:29,837 - __main__ - DEBUG - Converted float data types to double for greater precision
+2025-12-04 18:16:30,160 - __main__ - INFO - Record count of products table after bronze cleaning: 1345
+2025-12-04 18:16:30,160 - __main__ - INFO - ============ Saving products as Parquet ==========
+2025-12-04 18:16:30,160 - __main__ - DEBUG - Created save path for products: 'data/bronze/products_clean.parquet'
+2025-12-04 18:16:30,169 - __main__ - INFO - Record count of orders table after bronze cleaning: 68883
+2025-12-04 18:16:30,169 - __main__ - INFO - ============ Saving orders as Parquet ==========
+2025-12-04 18:16:30,169 - __main__ - DEBUG - Created save path for orders: 'data/bronze/orders_clean.parquet'
+2025-12-04 18:16:30,173 - __main__ - INFO - Record count of departments after bronze cleaning: 6
+2025-12-04 18:16:30,174 - __main__ - INFO - ============ Saving departments as Parquet ==========
+2025-12-04 18:16:30,174 - __main__ - DEBUG - Created save path for departments: 'data/bronze/departments_clean.parquet'
+2025-12-04 18:16:30,175 - __main__ - INFO - Record count of categories after bronze cleaning: 58
+2025-12-04 18:16:30,175 - __main__ - INFO - ============ Saving categories as Parquet ==========
+2025-12-04 18:16:30,175 - __main__ - DEBUG - Created save path for categories: 'data/bronze/categories_clean.parquet'
+2025-12-04 18:16:31,867 - __main__ - INFO - Successfully saved categories to 'data/bronze/categories_clean.parquet'
+2025-12-04 18:16:31,867 - __main__ - INFO - ========== Finished processing categories ==========
+2025-12-04 18:16:31,868 - __main__ - INFO - ========== Started processing customers ==========
+2025-12-04 18:16:31,868 - __main__ - INFO - ========== Parsing customers ========== 
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 1: customer_id of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 2: customer_fname of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 3: customer_lname of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 4: customer_email of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 5: customer_password of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 6: customer_street of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 7: customer_city of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 8: customer_state of 9
+2025-12-04 18:16:31,868 - __main__ - INFO - Successfully parsed column 9: customer_zipcode of 9
+2025-12-04 18:16:31,870 - __main__ - INFO - Successfuly loaded customers from directory: raw/customers
+2025-12-04 18:16:31,871 - __main__ - INFO - ========== Cleaning customers data ==========
+2025-12-04 18:16:31,915 - __main__ - INFO - Successfully saved departments to 'data/bronze/departments_clean.parquet'
+2025-12-04 18:16:31,915 - __main__ - INFO - ========== Finished processing departments ==========
+2025-12-04 18:16:31,916 - __main__ - INFO - ========== Started processing order_items ==========
+2025-12-04 18:16:31,916 - __main__ - INFO - ========== Parsing order_items ========== 
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 1: order_item_id of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 2: order_item_order_id of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 3: order_item_product_id of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 4: order_item_quantity of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 5: order_item_subtotal of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfully parsed column 6: order_item_product_price of 6
+2025-12-04 18:16:31,916 - __main__ - INFO - Successfuly loaded order_items from directory: raw/order_items
+2025-12-04 18:16:31,916 - __main__ - INFO - ========== Cleaning order_items data ==========
+2025-12-04 18:16:32,167 - __main__ - INFO - Successfully saved orders to 'data/bronze/orders_clean.parquet'
+2025-12-04 18:16:32,168 - __main__ - INFO - ========== Finished processing orders ==========
+2025-12-04 18:16:32,237 - __main__ - INFO - Successfully saved products to 'data/bronze/products_clean.parquet'
+2025-12-04 18:16:32,237 - __main__ - INFO - ========== Finished processing products ==========
+2025-12-04 18:16:32,359 - __main__ - INFO - Record count of customers before cleaning: 12435
+2025-12-04 18:16:32,360 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:32,360 - __main__ - DEBUG - Dropped nulls and duplicate customer ids
+2025-12-04 18:16:32,369 - __main__ - INFO - Record count of order_items before cleaning: 172198
+2025-12-04 18:16:32,369 - __main__ - WARNING - Record count of null values in primary key before cleaning: 0
+2025-12-04 18:16:32,369 - __main__ - DEBUG - Dropped nulls and duplicate order_items ids
+2025-12-04 18:16:32,369 - __main__ - DEBUG - Converted float data types to double for greater precision
+2025-12-04 18:16:32,376 - __main__ - DEBUG - Dropped customer email and password columns as PII
+2025-12-04 18:16:32,650 - __main__ - INFO - Record count of customers after bronze cleaning: 12435
+2025-12-04 18:16:32,650 - __main__ - INFO - ============ Saving customers as Parquet ==========
+2025-12-04 18:16:32,650 - __main__ - DEBUG - Created save path for customers: 'data/bronze/customers_clean.parquet'
+2025-12-04 18:16:32,667 - __main__ - INFO - Record count of order_items table after bronze cleaning: 172198
+2025-12-04 18:16:32,667 - __main__ - INFO - ============ Saving order_items as Parquet ==========
+2025-12-04 18:16:32,667 - __main__ - DEBUG - Created save path for order_items: 'data/bronze/order_items_clean.parquet'
+2025-12-04 18:16:33,221 - __main__ - INFO - Successfully saved customers to 'data/bronze/customers_clean.parquet'
+2025-12-04 18:16:33,222 - __main__ - INFO - ========== Finished processing customers ==========
+2025-12-04 18:16:33,436 - __main__ - INFO - Successfully saved order_items to 'data/bronze/order_items_clean.parquet'
+2025-12-04 18:16:33,436 - __main__ - INFO - ========== Finished processing order_items ==========

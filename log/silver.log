@@ -1,0 +1,469 @@
+2025-12-04 21:18:04,220 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:18:04,221 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:18:04,221 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:18:05,749 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:18:06,773 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:18:06,947 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:18:06,948 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:18:06,949 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:20:06,403 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:20:06,405 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:20:06,406 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:20:06,554 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:20:06,673 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:20:15,511 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:20:15,513 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:20:15,513 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:21:01,578 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:21:01,580 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:21:01,581 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:21:01,711 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:21:01,840 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:21:01,952 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:21:01,953 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:21:01,956 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:21:01,967 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:21:02,159 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:21:02,162 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:21:02,163 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:21:02,271 - Silver_Layer_Log - INFO - ========== Loading customers data from ../data/bronze/customers_clean.parquet ==========
+2025-12-04 21:21:02,271 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/customers_clean.parquet to DataFrame
+2025-12-04 21:21:02,272 - Silver_Layer_Log - DEBUG - Renamed columns in customers for uniformity
+2025-12-04 21:21:02,272 - Silver_Layer_Log - DEBUG - Added customer's full_name column
+2025-12-04 21:21:02,876 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:21:02,878 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:21:02,879 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:21:29,074 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:21:29,077 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:21:29,077 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:21:30,784 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:21:31,719 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:21:32,060 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:21:32,061 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:21:32,061 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:21:32,065 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:21:32,267 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:21:32,267 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:21:32,267 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:21:32,359 - Silver_Layer_Log - INFO - ========== Loading customers data from ../data/bronze/customers_clean.parquet ==========
+2025-12-04 21:21:32,359 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/customers_clean.parquet to DataFrame
+2025-12-04 21:21:32,359 - Silver_Layer_Log - DEBUG - Renamed columns in customers for uniformity
+2025-12-04 21:21:32,359 - Silver_Layer_Log - DEBUG - Added customer's full_name column
+2025-12-04 21:21:32,968 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:21:32,968 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:21:32,968 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:23:36,359 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:23:36,361 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:23:36,361 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:23:36,489 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:23:36,577 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:23:36,678 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:23:36,678 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:23:36,678 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:23:36,679 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:23:36,768 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:23:36,768 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:23:36,768 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:23:36,832 - Silver_Layer_Log - INFO - ========== Loading customers data from ../data/bronze/customers_clean.parquet ==========
+2025-12-04 21:23:36,832 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/customers_clean.parquet to DataFrame
+2025-12-04 21:23:36,832 - Silver_Layer_Log - DEBUG - Renamed columns in customers for uniformity
+2025-12-04 21:23:36,832 - Silver_Layer_Log - DEBUG - Added customer's full_name column
+2025-12-04 21:23:36,906 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:23:36,906 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:23:36,906 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:23:54,342 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:23:54,343 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:23:54,343 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:23:54,465 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:23:54,554 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:23:54,630 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:23:54,630 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:23:54,630 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:23:54,631 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:23:54,711 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:23:54,712 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:23:54,712 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:23:54,780 - Silver_Layer_Log - INFO - ========== Loading customers data from ../data/bronze/customers_clean.parquet ==========
+2025-12-04 21:23:54,781 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/customers_clean.parquet to DataFrame
+2025-12-04 21:23:54,781 - Silver_Layer_Log - DEBUG - Renamed columns in customers for uniformity
+2025-12-04 21:23:54,781 - Silver_Layer_Log - DEBUG - Added customer's full_name column
+2025-12-04 21:23:54,841 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:23:54,841 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:23:54,841 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:32:20,609 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:32:20,610 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:32:20,611 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:32:20,753 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:32:20,879 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:32:20,879 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:32:20,880 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:32:20,880 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:32:20,880 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:32:20,880 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:32:20,880 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:32:20,880 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:32:20,880 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:32:20,880 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:32:20,880 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:34:19,092 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:34:19,093 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:34:19,094 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:34:19,301 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:34:19,379 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:34:19,380 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:34:19,380 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:34:19,380 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:34:19,381 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:34:19,381 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:34:19,381 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:34:19,381 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:34:19,381 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:34:19,381 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:34:19,381 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:38:16,615 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:38:16,616 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:38:16,616 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:38:16,765 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:38:16,864 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:38:16,864 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:38:16,864 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:38:16,864 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:38:16,865 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:38:16,865 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:38:16,865 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:38:16,865 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:38:16,865 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:38:16,866 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:38:16,866 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:38:58,133 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:38:58,134 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:38:58,135 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:38:58,404 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:38:58,497 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:38:58,497 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:38:58,497 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:38:58,497 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:38:58,498 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:38:58,498 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:38:58,498 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:38:58,498 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:38:58,498 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:38:58,498 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:38:58,499 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:39:52,752 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:39:52,753 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:39:52,753 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:39:52,938 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:39:53,011 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:39:53,011 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:39:53,012 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:39:53,012 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:39:53,013 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:39:53,013 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:39:53,013 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:39:53,013 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:39:53,013 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:39:53,013 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:39:53,013 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:40:57,454 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:40:57,455 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:40:57,455 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:40:57,581 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:40:57,689 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:40:57,690 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:40:57,690 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:40:57,690 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:40:57,690 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:40:57,691 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:43:17,440 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:43:17,442 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:43:17,443 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:43:17,556 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:43:17,647 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:43:17,647 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:43:17,647 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:43:17,647 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:43:17,648 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:43:17,648 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:43:17,648 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:43:17,648 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:43:17,649 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:43:17,649 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:43:29,958 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:43:29,959 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:43:29,959 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:43:30,072 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:43:30,154 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:43:30,154 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:43:30,154 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:43:30,154 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:43:30,155 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:43:30,155 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:43:30,155 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:43:30,155 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:43:30,155 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:43:30,155 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:43:30,155 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:43:48,405 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:43:48,406 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:43:48,406 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:43:48,515 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:43:48,641 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:43:48,642 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:43:48,642 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:43:48,642 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:43:48,643 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:43:48,643 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:43:48,643 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:43:48,643 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:43:48,643 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:43:48,643 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:43:48,643 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:44:44,870 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:44:44,921 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:44:44,921 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:44:45,005 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:44:45,071 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:44:45,072 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:44:45,072 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:44:45,072 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:44:45,072 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:44:45,073 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:44:45,073 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:44:45,073 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:44:45,073 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:44:45,073 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:44:45,073 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:45:52,217 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:45:52,218 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:45:52,218 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:45:52,335 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:45:52,408 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:45:52,408 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:45:52,408 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:45:52,408 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:45:52,408 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:45:52,409 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:46:52,754 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:46:52,757 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:46:52,757 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:46:52,864 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:46:52,954 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:46:52,954 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:46:52,954 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:46:52,954 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:46:52,955 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:46:52,955 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:46:52,955 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:46:52,955 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:46:52,955 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:46:52,955 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:46:52,955 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:47:04,939 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:47:04,940 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:47:04,940 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:47:05,081 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:47:05,164 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:47:05,164 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:47:05,164 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:47:05,164 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:47:05,166 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:47:05,166 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:47:05,166 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:47:05,166 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:47:05,166 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:47:05,166 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:47:05,166 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:48:27,744 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:48:27,745 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:48:27,746 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:48:27,860 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:48:27,938 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:48:27,938 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:48:27,939 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:48:27,939 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:48:27,939 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:48:27,939 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:48:27,939 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:48:27,939 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:48:27,939 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:48:27,939 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:48:27,940 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:49:17,858 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:49:17,892 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:49:17,908 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:49:18,109 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:49:18,178 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:49:18,178 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:49:18,179 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:49:18,179 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:49:18,179 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:49:18,179 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:49:18,179 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:49:18,179 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:49:18,179 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:49:18,179 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:49:18,179 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:50:40,955 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:50:40,956 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:50:40,957 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:50:41,108 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:50:41,204 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:50:41,205 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:50:41,205 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:50:41,205 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:50:41,205 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:50:41,205 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:50:41,205 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:50:41,205 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:50:41,206 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:50:41,206 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:50:41,206 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 21:50:57,920 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 21:50:57,924 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 21:50:57,924 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 21:50:58,052 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 21:50:58,143 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 21:50:58,143 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 21:50:58,144 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 21:50:58,144 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 21:50:58,144 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 21:50:58,144 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 21:50:58,144 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 21:50:58,144 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 21:50:58,144 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 21:50:58,145 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 21:50:58,145 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:19:32,473 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:19:32,478 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:19:32,478 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:19:32,697 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:19:32,951 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:19:32,951 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:19:32,951 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:19:32,951 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:19:32,954 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:19:32,954 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:19:32,954 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:19:32,954 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:19:32,955 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:19:32,955 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:19:32,955 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:19:38,537 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:19:38,538 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:19:38,539 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:19:38,685 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:19:38,830 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:19:38,830 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:19:38,830 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:19:38,830 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:19:38,831 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:19:38,831 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:19:38,831 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:19:38,831 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:19:38,831 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:19:38,831 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:19:38,831 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:19:38,832 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:19:38,832 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:19:38,973 - Silver_Layer_Log - INFO - Successfully built sales_fact table
+2025-12-04 22:19:49,493 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:19:49,496 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:19:49,496 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:19:49,629 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:19:49,743 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:19:49,743 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:19:49,743 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:19:49,743 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:19:49,743 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:19:49,744 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:19:49,744 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:19:49,744 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:19:49,744 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:19:49,744 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:19:49,744 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:19:49,744 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:19:49,744 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:19:49,932 - Silver_Layer_Log - INFO - Successfully built sales_fact table
+2025-12-04 22:27:40,872 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:27:40,874 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:27:40,875 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:27:41,038 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:27:41,110 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:27:41,110 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:27:41,110 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:27:41,110 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:27:41,111 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:27:41,111 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:27:41,111 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:27:41,111 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:27:41,111 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:27:41,111 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:27:41,111 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:27:41,111 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:27:41,111 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:27:41,258 - Silver_Layer_Log - INFO - Successfully built sales_fact table
+2025-12-04 22:27:57,128 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:27:57,130 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:27:57,130 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:27:57,260 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:27:57,342 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:27:57,342 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:27:57,342 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:27:57,342 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:27:57,343 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:27:57,343 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:27:57,343 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:27:57,343 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:27:57,343 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:27:57,343 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:27:57,343 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:27:57,343 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:27:57,344 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:27:57,528 - Silver_Layer_Log - INFO - Successfully built sales_fact table
+2025-12-04 22:28:17,752 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:28:17,753 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:28:17,753 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:28:17,927 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:28:18,019 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:28:18,019 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:28:18,019 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:28:18,019 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:28:18,020 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:28:18,020 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:28:18,020 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:28:18,020 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:28:18,020 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:28:18,020 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:28:18,020 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:28:18,020 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:28:18,020 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:28:18,222 - Silver_Layer_Log - INFO - Successfully built sales_fact table
+2025-12-04 22:28:44,573 - Silver_Layer_Log - INFO - ========== Loading order_items data from ../data/bronze/order_items_clean.parquet ==========
+2025-12-04 22:28:44,574 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/order_items_clean.parquet to DataFrame
+2025-12-04 22:28:44,574 - Silver_Layer_Log - DEBUG - Renamed columns in order_items for uniformity
+2025-12-04 22:28:44,714 - Silver_Layer_Log - DEBUG - Validating the order items subtotal logic
+2025-12-04 22:28:44,788 - Silver_Layer_Log - WARNING - Number of records where subtotal calculation is invalid: 0
+2025-12-04 22:28:44,788 - Silver_Layer_Log - INFO - ========== Loading orders data from ../data/bronze/orders_clean.parquet ==========
+2025-12-04 22:28:44,788 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/orders_clean.parquet to DataFrame
+2025-12-04 22:28:44,788 - Silver_Layer_Log - DEBUG - Renamed columns in orders for uniformity
+2025-12-04 22:28:44,789 - Silver_Layer_Log - DEBUG - Added columns for year, month, day, and weekday from order_date timestamp
+2025-12-04 22:28:44,789 - Silver_Layer_Log - INFO - ========== Loading products data from ../data/bronze/products_clean.parquet ==========
+2025-12-04 22:28:44,789 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/products_clean.parquet to DataFrame
+2025-12-04 22:28:44,789 - Silver_Layer_Log - DEBUG - Renamed columns in Products for uniformity
+2025-12-04 22:28:44,789 - Silver_Layer_Log - INFO - ========== Loading categories data from ../data/bronze/categories_clean.parquet ==========
+2025-12-04 22:28:44,789 - Silver_Layer_Log - INFO - Successfully loaded data from ../data/bronze/categories_clean.parquet to DataFrame
+2025-12-04 22:28:44,789 - Silver_Layer_Log - DEBUG - Renamed columns in categories for uniformity
+2025-12-04 22:28:44,790 - Silver_Layer_Log - DEBUG - Left joined order_items and orders
+2025-12-04 22:28:44,790 - Silver_Layer_Log - DEBUG - Left joined products and categories
+2025-12-04 22:28:44,945 - Silver_Layer_Log - INFO - Successfully built sales_fact table
